@@ -1,0 +1,16 @@
+﻿@model System.Collections.Generic.List<DemoIISThreadAsync.Models.Produto>
+
+@{
+}
+
+<h2>Sync</h2>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Id
+            <strong>@item.Name</strong>
+        </li>
+    }
+</ul>
