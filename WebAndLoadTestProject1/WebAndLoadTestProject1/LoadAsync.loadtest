@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LoadTest Name="LoadAsync" Description="" Owner="" storage="c:\users\rodolfof\onedrive\documents\apresentações\tdc 2014\demo final\webandloadtestproject1\webandloadtestproject1\loadasync.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="0023ff9a-b2fc-4261-a552-d958546c8f9e" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<LoadTest Name="LoadAsync" Description="" Owner="" storage="c:\users\rodolfof\onedrive\documents\apresentações\tdc 2014\demo iis\webandloadtestproject1\webandloadtestproject1\loadasync.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="0023ff9a-b2fc-4261-a552-d958546c8f9e" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
     <Scenario Name="Scenario1" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="true" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0.2" Pattern="NormalDistribution" />
-      <LoadProfile Pattern="Step" InitialUsers="1" MaxUsers="50" StepUsers="4" StepDuration="2" StepRampTime="0" />
+      <LoadProfile Pattern="Step" InitialUsers="1" MaxUsers="40" StepUsers="10" StepDuration="5" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="AsyncTest" Path="test\asynctest.webtest" Id="6df41854-f8a7-4453-bfd0-64f2e3913dfd" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>

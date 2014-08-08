@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<LoadTest Name="LoadSinc" Description="" Owner="" storage="c:\users\rodolfof\onedrive\documents\apresentações\tdc 2014\demo final\webandloadtestproject1\webandloadtestproject1\loadsinc.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="5c0a1305-e278-4a98-8084-8718130af67d" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+<LoadTest Name="LoadSinc" Description="" Owner="" storage="c:\users\rodolfof\onedrive\documents\apresentações\tdc 2014\demo iis\webandloadtestproject1\webandloadtestproject1\loadsinc.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Run Settings1" Id="5c0a1305-e278-4a98-8084-8718130af67d" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
   <Scenarios>
     <Scenario Name="Scenario1" DelayBetweenIterations="0" PercentNewUsers="0" IPSwitching="true" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
       <ThinkProfile Value="0.2" Pattern="NormalDistribution" />
-      <LoadProfile Pattern="Step" InitialUsers="1" MaxUsers="50" StepUsers="4" StepDuration="2" StepRampTime="0" />
+      <LoadProfile Pattern="Step" InitialUsers="1" MaxUsers="40" StepUsers="10" StepDuration="5" StepRampTime="0" />
       <TestMix>
         <TestProfile Name="SincTest" Path="test\sinctest.webtest" Id="7e19b1ea-b059-4530-903e-9f0241e3d385" Percentage="100" Type="Microsoft.VisualStudio.TestTools.WebStress.DeclarativeWebTestElement, Microsoft.VisualStudio.QualityTools.LoadTest, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
       </TestMix>
