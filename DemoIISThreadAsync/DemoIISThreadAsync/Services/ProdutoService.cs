@@ -19,15 +19,5 @@ namespace DemoIISThreadAsync.Services
                 return JsonConvert.DeserializeObject<List<Produto>>(webClient.DownloadString(uri));
             }
         }
-        public async Task<List<Produto>> GetProdutosAsync()
-        {
-            var uri = Util.getServiceUri("produto");
-            using (HttpClient httpClient = new HttpClient())
-            {
-                var response = await httpClient.GetAsync(uri);
-                return (await response.Content.ReadAsAsync<List<Produto>>());
-            }
-        }
-
     }
 }

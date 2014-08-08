@@ -13,12 +13,6 @@ namespace DemoIISThreadAsync.Controllers
 
             return View(produtoService.GetProdutos());
         }
-
-        public async Task<ActionResult> IndexAsync()
-        {
-            var produtoService = new Services.ProdutoService();
-
-            return View( await produtoService.GetProdutosAsync());
-        }
+        
     }
 }
