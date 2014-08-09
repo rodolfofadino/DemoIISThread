@@ -13,8 +13,16 @@ namespace DemoIISAPI.Controllers
     {
         public ActionResult Index()
         {
+            using (var context =new BloggingContext())
+            {
+                context.Blogs.Add(new Blog() { Name = "Blog demo" });
+                context.Blogs.Add(new Blog() { Name = "Blog demo 1" });
 
-            return View();
+                context.SaveChanges();
+
+                var blogs = context.Blogs.ToList();
+                return View(blogs);
+            }
         }
     }
 }
