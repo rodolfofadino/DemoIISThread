@@ -11,16 +11,16 @@ namespace DemoIISAPI.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
             using (var context =new BloggingContext())
             {
                 context.Blogs.Add(new Blog() { Name = "Blog demo" });
                 context.Blogs.Add(new Blog() { Name = "Blog demo 1" });
 
-                context.SaveChanges();
+                await context.SaveChangesAsync();
 
-                var blogs = context.Blogs.ToList();
+                var blogs = await context.Blogs.ToListAsync();
                 return View(blogs);
             }
         }
